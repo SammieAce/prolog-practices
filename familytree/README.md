@@ -11,7 +11,7 @@ Start Prolog from terminal by passing command : `prolog`
 
 Load the familytree.pl file into memory by using the command : `[familytree].`
 
-The questions-answers.txt file contains 21 questions and a list of possible answers.
+The questions-answers.txt file contains 21 questions and a list of possible answers. Pass the answers as queries to obtain results.
 
 Instructions for executing queries can be found [here](http://www.swi-prolog.org/windows.html) ***(the queries work on both windows and linux)***
  
