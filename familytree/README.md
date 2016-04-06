@@ -7,9 +7,9 @@ Install prolog in the system following instructions from [www.swi-prolog.org](ht
 
 Go to directory containing the familytree.pl file and start terminal
 
-Start Prolog from terminal by passing command : ===prolog===
+Start Prolog from terminal by passing command : `prolog`
 
-Load the familytree.pl file into memory by using the command : ===[familytree].===
+Load the familytree.pl file into memory by using the command : `[familytree].`
 
 The questions-answers.txt file contains 21 questions and a list of possible answers.
 
