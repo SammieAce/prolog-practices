@@ -1,0 +1,45 @@
+QUESTIONS----write down the query used to answer each question
+1-List all mothers and their children
+2-List all parents and their children
+3- List all predecessors and their successors/descendants
+4-List only parents
+5- List only mothers
+6-List only predecessors
+7-List only successors/descendants
+8-List all females
+9-List all males
+10- List all female parents
+11- List all male parents
+12- List all female successors/descendants
+13- List all male predecessors
+14-Are there any parents?
+15-Are there any successors/descendants
+16-Are there any predecessors
+17-Are there any males
+18-Are there any females
+19-Are there any mothers
+20-List only female successors/descendants
+21-List only male predecessors
+
+ANSWERS
+1 - bagof(X,mother(Mother,X),Descendants).
+2 - bagof(X,parent(Parent,X),Children).
+3 - bagof(X,descendant(X,Predecessor),Descendants).
+4 - setof(X,parent(X,Y),Parents).
+5 - setof(X,mother(X,Y),Mother).
+6 - bagof(X,ancestor(X,Person),Ancestors).
+7 - bagof(X,descendant(X,Person),Descendants).
+8 - findall(Y,female(Y),Females).
+9 - findall(Y,male(Y),Males).
+10- findall(X,mother(X,Y),Mothers),sort(Z,Mothers).
+11- findall(X,father(X,Y),Z),sort(Z,Fathers).
+12- findall(X,femaledescend(X,Y),Z),sort(Z,Femaledescendants).
+13- findall(X,maleancestor(X,Y),Z),sort(Z,Maleancestors).
+14- parent(don,randy)., parent(rosie,mike) return true, hence there are parents
+15- decendant(randy,don)., descendant(randy,elmer).,descendant(don,mildred). return true, hence there are descendants
+16- ancestor(elmer,randy).,ancestor(esther,rosie).,ancestor(greatgranny,mike). return true hence there are predecessors
+17- male(don)., male(randy)., male(elmer). return true hence there are males
+18- female(mildred)., female(rosie)., return true hence there are females.
+19- mother(esther,rosie)., mother(mildred,don). return true hence there are mothers
+20- setof(X,femaledescend(X,Person),Femaledescendants).
+21- setof(X,maleancestor(X,Person),Maleancestors).
